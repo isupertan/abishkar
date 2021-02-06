@@ -1,0 +1,318 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Home Page*/
+.hero-banner {
+	min-height: 100vh;
+	background: url(../img/1-st-section.jpg);
+/*	background: url(../img/taru-goyal-lZVBjYeeEu0-unsplash.jpg);*/
+	background-size: cover;
+}
+
+.hero-banner .container {
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.hero-banner h1 {
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-size: 4rem;
+}
+
+.hero-banner p {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.25rem;
+}
+
+.button {
+	padding: 0.75rem 2rem;
+	background: none;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+	transition: 0.3s;
+}
+
+.white-border {
+	border: 1.5px solid #fff;
+	color: #fff;
+}
+
+.black-border {
+	border: 1.5px solid #000;
+	color: #000;
+}
+
+.black-border:hover {
+	background: #000;
+	color: #fff;
+}
+
+.white-border:hover {
+	background: #fff;
+	color: #000;
+}
+
+.white-bg {
+	color: #fff;
+	color: #000;
+}
+
+.section-title {
+	font-family: 'Playfair Display', serif;
+	float: left;
+	margin: 3rem 0;
+}
+
+.section-title h2 {
+	text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-size: 39px;
+    position: relative;
+    font-weight: 600;
+}
+.section-title h2::after{
+   position: absolute;
+    content: '';
+    background: #ffba55;
+    /* top: 10px; */
+    width: 100%;
+    height: 16px;
+    left: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+.section-title div:nth-child(2) {
+	background: #587c87;
+	width: 100%;
+	max-height: 18px;
+	transform: translate(0,-25px);
+	z-index: 9;
+}
+
+.about-us {
+	padding: 2.5rem 0;
+}
+
+/*.about-count-container {
+	margin: 2.5rem 0;
+}*/
+
+.about-count-container {
+	border: 2px solid #587c87;
+	min-height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*.about-count-container:hover {
+	border: 3px solid #587c87;
+}
+*/
+.about-count-container h3 {
+	font-size: 3.5rem;
+	text-align: center;
+	font-weight: 100;
+}
+
+.about-count-container p {
+	text-align: center;
+	font-size: 0.9rem;
+	margin: 0;
+	width: 160px;
+	margin-left: 10px;
+	background: #fff;
+}
+
+.img_wrapper {
+	border: 2px solid #587c87;
+	max-width: 90%;
+	margin-top: 3rem;
+}
+
+.img_wrapper img {
+	transform: translate(-15px, -15px);
+}
+
+.projects {
+	padding: 2.5rem 0;
+}
+
+.projects h5 {
+	padding: 1rem 0;
+}
+
+.projects p {
+	padding: 1rem 0;
+}
+
+.projects .swiper-container {
+	max-height: 60vh;
+}
+
+/*.work-stages .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}*/
+
+.full-width {
+	width: 100%;
+}
+
+.fredricka-the-greate {
+	font-family: 'Fredericka the Great', cursive;
+}
+
+.work-stage-text p {
+	font-size: 0.9rem;
+}
+
+.work-stage-text {
+	padding-top: 12px;
+}
+
+.white-space {
+	height: 10px;
+	transform: translate(10px,10px);
+}
+
+.whatsapp-btn {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+}
+
+.whatsapp-btn img {
+	max-width: 50px;
+}
+
+.contact-banner {
+	min-height: 75vh;
+		background: url(../img/taru-goyal-lZVBjYeeEu0-unsplash.jpg);
+		background-size: cover;
+}
+
+.contact-banner .container {
+	min-height: 75vh;
+}
+
+/*Contact SU PAge*/
+.contact-form-section {
+	margin: 5em auto;
+}
+
+.contact-form-section .image-bg {
+	background: url('../images/ic_contact.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: cover;
+}
+
+.contact-us-form {
+	width: 75%;
+	margin: 0 auto;
+	padding: 3em 0;
+	z-index: 250;
+}
+
+.contact-us-form p {
+	padding: 1em 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.contact-us-form input {
+	width: 100%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #587c87;
+	outline: none;
+	color: #587c87;
+	padding: 8px 0;
+}
+
+.contact-us-form input:hover {
+	outline: none;
+}
+
+::placeholder {
+	color: var(--white);
+}
+
+.contact-us-form .form-group {
+	padding-bottom: 1em;
+}
+
+.contact-form-section .gradient-bg {
+	background: linear-gradient(45deg, rgba(40,112,75,1) 50%, rgba(10,77,42,1) 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-form-section .gradient-bg h2 {
+	font-size: 2.5em;
+	font-family: 'Playfair Display SC', serif;
+	z-index: 1000;
+	transform: translate(0, 75px);
+	color: #fff;
+}
+
+.yellow-border-box {
+	border: 1px solid rgb(255,209,0, 0.5);
+	width: 300px;
+	height: 300px;
+	z-index: 200;
+	transform: translate(50px, -75px) rotate(145deg);
+}
+
+.green-box {
+	height: 300px;
+	width: 300px;
+	background: linear-gradient(45deg, rgba(40,112,75,1) 50%, rgba(10,77,42,1) 100%);
+	transform: translate(-120px, 75px) rotate(145deg);
+	z-index: 100;
+}
+
+
+.about-us-page h1 {
+	font-family: 'Playfair Display SC', serif;
+	color: #495057;
+	font-size: 4em;
+	transform: translateY(40px);
+	padding: 0 1em;
+}
+
+.about-us-page img {
+	box-shadow: 20px 20px #e5e5e5;
+}
+
+.about-text-container {
+	max-width: 40%;
+}
+
+.our-vission h2 {
+	font-family: 'Playfair Display SC', serif;
+	transform: translate(0, 120px) rotate(90deg);
+	font-size: 3em;
+	min-width: 325px;
+	word-spacing: 0.5em;
+}
+
+.philoshopy h2 {
+	font-family: 'Playfair Display SC', serif;
+	padding: 1em 0;
+}
+
+.philoshopy p {
+	padding: 1em 0;
+}
