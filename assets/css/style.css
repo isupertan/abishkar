@@ -474,3 +474,7 @@ body {
 .swiper-button-next:after, .swiper-button-prev:after {
 	color: #ffba55;
 }
+
+.tagline-container {
+	padding: 0 2rem;
+}
