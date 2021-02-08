@@ -196,9 +196,32 @@ body {
 }
 
 .contact-banner {
-	min-height: 75vh;
+	min-height: 90vh;
+		background: url(../img/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg);
+		background-size: cover;
+}
+
+.about-banner {
+	min-height: 90vh;
 		background: url(../img/taru-goyal-lZVBjYeeEu0-unsplash.jpg);
 		background-size: cover;
+}
+
+.about-banner h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 4rem;
+	color: #fff;
+}
+
+.about-banner p {
+	font-size: 1.25rem;
+	color: #fff;
+}
+
+.about-banner .container {
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 
 .contact-banner .container {
@@ -261,7 +284,7 @@ body {
 
 .contact-form-section .gradient-bg h2 {
 	font-size: 2.5em;
-	font-family: 'Playfair Display SC', serif;
+	font-family: 'Playfair Display', serif;
 	z-index: 1000;
 	transform: translate(0, 75px);
 	color: #fff;
@@ -283,13 +306,32 @@ body {
 	z-index: 100;
 }
 
+.about-us-page {
+	margin-top: 2.5rem;
+}
 
 .about-us-page h1 {
-	font-family: 'Playfair Display SC', serif;
-	color: #495057;
+	font-family: 'Playfair Display', serif;
+	/*color: #495057;
 	font-size: 4em;
 	transform: translateY(40px);
-	padding: 0 1em;
+	padding: 0 1em;*/
+	/*padding: 1.5rem;*/
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 4rem;
+}
+
+.about-us-page h1::after{
+   position: absolute;
+    content: '';
+    background: #ffba55;
+    /* top: 10px; */
+    width: 100%;
+    height: 16px;
+    left: 0;
+    bottom: 0px;
+    z-index: -1;
 }
 
 .about-us-page img {
@@ -297,11 +339,20 @@ body {
 }
 
 .about-text-container {
-	max-width: 40%;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.about-text-container h2 {
+	max-width: 50%;
+}
+
+.about-text-container p {
+	padding: 1.5rem 0;
 }
 
 .our-vission h2 {
-	font-family: 'Playfair Display SC', serif;
+	font-family: 'Playfair Display', serif;
 	transform: translate(0, 120px) rotate(90deg);
 	font-size: 3em;
 	min-width: 325px;
@@ -309,10 +360,95 @@ body {
 }
 
 .philoshopy h2 {
-	font-family: 'Playfair Display SC', serif;
-	padding: 1em 0;
+	font-family: 'Playfair Display', serif;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	/*max-width: 50%;*/
+	/*margin: 0 auto;*/
+	position: relative;
+}
+
+.philoshopy h2::after{
+   position: absolute;
+    content: '';
+    background: #ffba55;
+    /* top: 10px; */
+    width: 100%;
+    height: 16px;
+    left: 0;
+    bottom: 0px;
+    z-index: -1;
 }
 
 .philoshopy p {
 	padding: 1em 0;
+}
+
+/*Service Page*/
+.service-banner {
+	height: 90vh;
+		background: url(../img/vinicius-amnx-amano-UnmGqzelFcM-unsplash.jpg);
+		background-size: cover;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+
+.service-banner h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 4rem;
+	/*text-transform: uppercase;*/
+}
+
+.service-banner p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1rem;
+}
+
+.service-section {
+	margin-top: 2.5rem;
+}
+
+.service-section .row {
+	margin: 5rem 0;
+}
+
+.service-description {
+	max-width: 75%;
+}
+
+.service-description h2 {
+	font-size: 2.25rem;
+	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
+	position: relative;
+	float: left;
+}
+
+.service-description h2::after{
+   position: absolute;
+    content: '';
+    background: #ffba55;
+    /* top: 10px; */
+    width: 100%;
+    height: 16px;
+    left: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.service-description a {
+	text-decoration: none;
+	background: #000;
+	color: #fff;
+}
+
+.service-description a:hover {
+	background: #fff;
+	color: #000;
+}
+
+.service-description p {
+	padding: 1.25rem 0;
+	width: 100%;
 }
