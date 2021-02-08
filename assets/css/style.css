@@ -452,3 +452,25 @@ body {
 	padding: 1.25rem 0;
 	width: 100%;
 }
+
+.rating-star {
+	font-size: 1.5rem;
+	color: #4caf50;
+}
+
+.testinomial-section {
+	margin: 5rem 0;
+}
+
+.testinomial-slider img {
+	max-width: 25%;
+	border-radius: 50%;
+}
+
+.testinomial-slider .swiper-wrapper {
+	margin: 2.5rem;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+	color: #ffba55;
+}
