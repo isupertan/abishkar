@@ -8,7 +8,7 @@ body {
 /*Home Page*/
 .hero-banner {
 	min-height: 100vh;
-	background: url(../img/1-st-section.jpg);
+	/*background: url(../img/1-st-section.jpg);*/
 /*	background: url(../img/taru-goyal-lZVBjYeeEu0-unsplash.jpg);*/
 	background-size: cover;
 }
@@ -16,7 +16,13 @@ body {
 .hero-banner .container {
 	display: flex;
 	align-items: center;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
+	position: absolute;
+	top: 35vh;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	user-select: none;
 }
 
 .hero-banner h1 {
@@ -29,6 +35,10 @@ body {
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.25rem;
+}
+
+.hero-banner .swiper-slide {
+	min-height: 100vh;
 }
 
 .button {
@@ -69,6 +79,11 @@ body {
 	font-family: 'Playfair Display', serif;
 	float: left;
 	margin: 3rem 0;
+	position: relative;
+	background: #fff;
+	max-height: 60px;
+	overflow: hidden;
+	z-index: 0;
 }
 
 .section-title h2 {
@@ -77,7 +92,10 @@ body {
     font-size: 39px;
     position: relative;
     font-weight: 600;
+    overflow: hidden;
+    z-index: -5;
 }
+
 .section-title h2::after{
    position: absolute;
     content: '';
@@ -203,7 +221,7 @@ body {
 
 .about-banner {
 	min-height: 90vh;
-		background: url(../img/taru-goyal-lZVBjYeeEu0-unsplash.jpg);
+		background: url(../img/jan-huber-fhg822on994-unsplash.jpg);
 		background-size: cover;
 }
 
@@ -226,6 +244,8 @@ body {
 
 .contact-banner .container {
 	min-height: 75vh;
+	position: absolute !important;
+	top: 10% !important;
 }
 
 /*Contact SU PAge*/
@@ -245,6 +265,16 @@ body {
 	margin: 0 auto;
 	padding: 3em 0;
 	z-index: 250;
+}
+
+.contact-us-form button {
+	background: #000;
+	color: #fff;
+}
+
+.contact-us-form button:hover {
+	background: #fff;
+	color: #000;
 }
 
 .contact-us-form p {
@@ -276,7 +306,7 @@ body {
 }
 
 .contact-form-section .gradient-bg {
-	background: linear-gradient(45deg, rgba(40,112,75,1) 50%, rgba(10,77,42,1) 100%);
+	background: linear-gradient(45deg, #ffba55 50%, #f99401 100%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -287,11 +317,11 @@ body {
 	font-family: 'Playfair Display', serif;
 	z-index: 1000;
 	transform: translate(0, 75px);
-	color: #fff;
+	color: #000;
 }
 
 .yellow-border-box {
-	border: 1px solid rgb(255,209,0, 0.5);
+	border: 1px solid rgb(255,255,255, 1);
 	width: 300px;
 	height: 300px;
 	z-index: 200;
@@ -301,7 +331,7 @@ body {
 .green-box {
 	height: 300px;
 	width: 300px;
-	background: linear-gradient(45deg, rgba(40,112,75,1) 50%, rgba(10,77,42,1) 100%);
+	background: linear-gradient(45deg, #ffba55 50%, #f99401 100%);
 	transform: translate(-120px, 75px) rotate(145deg);
 	z-index: 100;
 }
@@ -477,4 +507,40 @@ body {
 
 .tagline-container {
 	padding: 0 2rem;
+}
+
+.cursor {
+	width: 0.25px;
+	height: 100%;
+	background: #fff;
+	opacity: 0;
+	animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.animation-line {
+	position: relative;
+	background: #fff;
+}
+
+.animation-line span {
+	position: absolute;
+	line-height: 2.5rem;
+}
+
+#weWorkOnText1 {
+	max-height: 0;
+}
+
+.contact-us-form h2 {
+	font-size: 1.75rem;
 }
