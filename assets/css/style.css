@@ -559,8 +559,8 @@ body {
 
 .image_wrapper {
 	position: relative;
-	height: 250px;
-	width: 350px;
+	height: 150px;
+	width: 175px;
 }
 
 .image_wrapper img {
@@ -570,8 +570,8 @@ body {
 	transform: translate(-50%, -50%);
 	height: auto;;
 	width: auto;
-	max-width: 330px;
-	max-height: 200px;
+	max-width: 150px;
+	max-height: 130px;
 }
 @media (max-width: 592px) {
 	html, body {width: auto!important; overflow-x: hidden!important}
