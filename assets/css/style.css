@@ -544,3 +544,185 @@ body {
 .contact-us-form h2 {
 	font-size: 1.75rem;
 }
+
+.brand-slider .swiper-slide {
+	height: 250px;
+}
+
+.copyright-text {
+	text-align: start;
+}
+
+.trademark-text {
+	text-align: end;
+}
+
+.image_wrapper {
+	position: relative;
+	height: 250px;
+	width: 350px;
+}
+
+.image_wrapper img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: auto;;
+	width: auto;
+	max-width: 330px;
+	max-height: 200px;
+}
+@media (max-width: 592px) {
+	html, body {width: auto!important; overflow-x: hidden!important}
+	p {
+		font-size: 0.95rem;
+	}
+
+	.hero-banner .container {
+		z-index: 9;
+	}
+
+	.multiple-project-slider .swiper-slide {
+		max-width: 80%;
+	}
+
+	.testinomial-slider .swiper-slide {
+		max-width: 75%;
+	}
+
+	.brand-slider .swiper-slide {
+		max-width: 75%;
+	}
+
+	.responsive-order-one {
+		order: 1;
+	}
+
+	.responsive-order-two {
+		order: 2;
+	}
+
+	.cubeflow-slider {
+		margin-top: 50px;
+	}
+
+	.img_wrapper {
+		max-width: 100%;
+	}
+
+	.section-title {
+		max-height: 100px;
+	}
+
+	.section-title h2 {
+		font-size: 27px;
+	}
+
+	.brand-slider img {
+		max-width: 75%;
+	}
+
+	.rsmb-1 {
+		margin-bottom: 1.5rem;
+	}
+
+	.about-count-container h3 {
+		font-size: 2.75rem;
+	}
+
+	.projects {
+		padding: 0;
+	}
+
+	.copyright-text {
+		text-align: center;
+	}
+
+	.trademark-text {
+		text-align: center;
+	}
+
+	/*About Page*/
+	.about-banner h1 {
+		font-size: 3rem;
+		text-shadow: 0 2px 2px #222;
+	}
+
+	.about-banner p {
+		text-shadow: 0 2px 2px #222;
+	}
+
+	.about-us-page {
+		margin-top: 0;
+		padding: 0 1.5rem;
+	}
+
+	.about-text-container {
+		padding-top: 2rem;
+	}
+
+	.about-us-page img {
+		box-shadow: 10px 10px #e5e5e5;
+	}
+
+	.philoshopy {
+		padding: 0 2rem;
+	}
+
+	.philoshopy .section-title h2 {
+		font-size: 26px;
+	}
+
+	.philoshopy .section-title {
+		margin: 2rem 0;
+	}
+
+	.about-text-container h2 {
+		max-width: 100%;
+	}
+
+	.padding-one-em {
+		padding-top: 1rem;
+	}
+
+	.service-description {
+		margin-top: 1.25rem;
+		max-width: 100%;
+	}
+
+	.service-description h2 {
+		font-size: 2rem;
+	}
+
+	.service-section {
+		margin-top: 0;
+	}
+
+	.hero-banner h1 {
+		font-size: 3rem;
+		text-shadow: 0 2px 2px #222;
+	}
+
+	.green-box {
+		transform: translate(-120px, 60px) rotate(110deg);
+		z-index: 0;
+	}
+
+	.yellow-border-box {
+		z-index: 0;
+		transform: translate(50px, -15px) rotate(110deg);
+	}
+
+	.contact-form-section .gradient-bg h2 {
+		z-index: 1;
+	}
+
+	.hero-banner p {
+		text-shadow: 0 2px 2px #222;
+	}
+
+	.home-page-hero-banner h1 {
+		font-size: 2.75rem;
+	}
+}

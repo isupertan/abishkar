@@ -30,12 +30,16 @@
       <div class="col-lg-12 header">
         <div class="container">
           <div class="row">
-            <div class="col-6">
-              
+            <div class="col-lg-6 col-8">
+              <a href="./index.html">
+                <img src="./assets/img/ic_logo_white.png" alt="" class="img-fluid" />
+              </a>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-4">
+              <a href="javascript:void(0)" class="menu-btn">&#9776;</a>
               <!-- Menu -->
               <ul class="menu">
+                <a href="javascript:void(0)" class="menu-close-btn">&times;</a>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">Our Story</a></li>
                 <li><a href="./service.html">Services</a></li>
@@ -81,12 +85,12 @@
 
             <div class="row">
               
-              <div class="col-6">
+              <div class="col-lg-6">
                 
                 <img src="./assets/img/huy-nguyen-mVLMZiILyxM-unsplash.jpg" alt="" class="img-fluid" />
               </div>
 
-              <div class="col-6 d-flex justify-content-center align-items-center">
+              <div class="col-lg-6 d-flex justify-content-center align-items-center">
                 
                 <div class="about-text-container">
 
@@ -118,7 +122,7 @@
 
             <div class="row">
               
-              <div class="col-12 my-5">
+              <div class="col-lg-12 my-5">
                 <div class="d-flex align-items-center justify-content-center" id="weWorkOnText1">
                   <div class="section-title">
                     <h2>We undertake work on</h2>
@@ -137,7 +141,7 @@
             
             <div class="row">
               
-              <div class="col-6 p-0">
+              <div class="col-lg-6 p-0">
 
                 <div class="animated-img">
                   <img src="./assets/img/huy-nguyen-mVLMZiILyxM-unsplash.jpg" alt="" class="img-fluid" />
@@ -145,7 +149,7 @@
 
               </div>
 
-              <div class="col-6 d-flex align-items-center">
+              <div class="col-lg-6 d-flex align-items-center">
 
                 <ol class="padding-one-em">
                   <li>Take take up turnkey projects right from scratch to finish.</li>
@@ -165,7 +169,7 @@
 
             <div class="row">
               
-              <div class="col-6 d-flex align-items-center order-two">
+              <div class="col-lg-6 d-flex align-items-center responsive-order-two">
 
                 <ol start="6" class="padding-one-em">
                   <li>Help in procurement of appropriate artworks and sculptures which would add value to your homes.</li>
@@ -179,7 +183,7 @@
 
               </div>
 
-              <div class="col-6 p-0 order-one">
+              <div class="col-lg-6 p-0 responsive-order-one">
                 
                 <div class="animated-img">
                   <img src="./assets/img/huy-nguyen-mVLMZiILyxM-unsplash.jpg" alt="" class="img-fluid" />
@@ -269,10 +273,10 @@
           <!-- Footer Tagline  -->
           <div class="row">
             <div class="col-lg-6">
-              <p>&copy; Abishkar Interior</p>
+              <p class="copyright-text">&copy; Abishkar Interior</p>
             </div>
             <div class="col-lg-6">
-              <p class="text-end">Designed & Developed By <a href="#" class="text-muted">Tinta Square</a></p>
+              <p class="trademark-text">Designed & Developed By <a href="https://www.tintasquare.com/" rel="nofollow" class="text-muted">Tinta Square</a></p>
             </div>
           </div>
           <!-- / -->
@@ -372,6 +376,14 @@
           }
         }
       });
+     })
+
+     $('.menu-btn').click(function() {
+        $('.menu').css('left','0')
+     })
+
+     $('.menu-close-btn').click(function() {
+        $('.menu').css('left','100%')
      })
     </script>
 
